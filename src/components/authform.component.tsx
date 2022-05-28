@@ -20,8 +20,12 @@ function AuthForm(): ReactElement {
     return (
         <div className="flex flex-col justify-center flex-1 gap-4 h-min m-auto">
             <nav className="flex flex-row justify-around mx-auto gap-4">
-                <button type="button" onClick={changeAuthType}>Sign In</button>
-                <button type="button" onClick={changeAuthType}>Sign Up</button>
+                <button 
+                    className={`border-b-2 ${authType == 0 ? "border-blue-700" : ""}`}
+                    type="button" onClick={changeAuthType}>Sign In</button>
+                <button 
+                    className={`border-b-2 ${authType == 1 ? "border-blue-700" : ""}`}
+                    type="button" onClick={changeAuthType}>Sign Up</button>
             </nav>
             
             {
@@ -31,9 +35,6 @@ function AuthForm(): ReactElement {
                     <SignUpForm />
                 )
             }
-
-            <p className="m-auto">or</p>
-            <Button type="auth">Log in With Google</Button>
         </div>
     )
 }

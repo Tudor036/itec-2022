@@ -1,3 +1,4 @@
+import { TextField } from "@mui/material";
 import { ReactElement } from "react";
 
 interface InputProps {
@@ -7,16 +8,7 @@ interface InputProps {
 
 function  FormInput(props: InputProps): ReactElement {
     return (
-        <label
-            className="flex justify-between gap-4 items-center" 
-            htmlFor={props.name}>{props.name}: 
-            <input 
-                className="border-b-2 border-blue-300 focus:outline-0"
-                type={props.type} 
-                name={props.name} 
-                id={props.name}
-            />
-        </label>
+        <TextField id="standard-basic" label={props.name} variant="standard" />
     )
 }
 

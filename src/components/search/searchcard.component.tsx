@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 interface CampusCardProps {
     campusId: number,
     campusName: string,
@@ -7,10 +7,11 @@ interface CampusCardProps {
 }
 
 function SearchCard({campusId, campusName, campusLocation }: CampusCardProps): ReactElement {
+    
     return (
         <div>
+            <img src="" alt="" />
             <div>
-                <img src="" />
                 <div>
                     <h1>{campusName}</h1>
                     <h1>{campusLocation}</h1>

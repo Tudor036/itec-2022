@@ -1,9 +1,10 @@
 import { ReactElement } from "react";
+import CampusMenu from "../components/campus/campusmenu.component";
 
 function CampusPage(): ReactElement {
     return (
         <div>
-            Campus Page
+            <CampusMenu />
         </div>
     )
 }

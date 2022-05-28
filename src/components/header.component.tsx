@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import SearchForm from "./searchform.component";
+import SearchForm from "./search/searchform.component";
 
 function Header(): ReactElement {
     return (

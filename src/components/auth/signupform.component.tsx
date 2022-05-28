@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import Button from "./chuncks/button.component";
-import FormInput from "./chuncks/forminput.component";
+import Button from "../chuncks/button.component";
+import FormInput from "../chuncks/forminput.component";
 
 function SignUpForm(): ReactElement {
     

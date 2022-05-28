@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import AuthForm from "../components/authform.component";
+import AuthForm from "../components/auth/authform.component";
 
 import AuthIllustration from '../assets/photo/auth-illustration.jpg';
 

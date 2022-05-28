@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { ReactElement, useState } from 'react';
+import { Outlet } from 'react-router';
 
-function App() {
+function App(): ReactElement {
 
   return (
-    <div>
-      <h1>App</h1> 
+    <div className='grid place-items-center w-screen h-screen'>
+      <Outlet/>
     </div>
   )
 }
